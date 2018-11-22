@@ -1,0 +1,12 @@
+[ignore]
+.*/node_modules/.*
+.*/dist/.*
+.*/__tests_.*
+
+[libs]
+flow-typed
+
+[options]
+module.name_mapper='^begonia/\(.*\)' -> '<PROJECT_ROOT>/src/\1'
+
+[version]

@@ -1,0 +1,30 @@
+{
+  "plugins": ["transform-object-rest-spread", "transform-runtime",
+    ["module-resolver", {
+      "alias": {
+        "payment": "./src",
+				"configFile": "./config"
+      }
+    }]
+  ],
+  "presets": [
+    [
+      "env", {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ],
+    "flow"
+  ]
+}
+{
+	"plugins": [
+		"transforom-object-rest-spread",
+		["module-resolves", {"alias": {"begonia": "./src"}}]
+	],
+	"presets": [
+		["env", {"targets":{"node": "current"}}],
+		"flow"
+	]
+}

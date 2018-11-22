@@ -1,0 +1,51 @@
+{
+  "name": "green-lead-begonia",
+  "version": "1.0.0",
+  "description": "Framework agnostic safe API with Flow and Swagger",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon src/index.js -L --exec babel-node",
+    "coverage": "NODE_ENV=test jest src/** --verbose --coverage --noStackTrace --no-cache",
+    "test": "NODE_ENV=test jest src/**",
+    "lint": "eslint --cache src",
+    "flow": "flow",
+    "precommit": "npm run lint && npm run flow && npm run test"
+  },
+  "keywords": [
+    "flow",
+    "api",
+    "safe",
+    "type",
+    "swagger"
+  ],
+  "author": "Romain Bourjot",
+  "license": "CECILL-C",
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-syntax-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.1.5",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "eslint": "^5.9.0",
+    "eslint-plugin-flowtype": "^3.2.0",
+    "eslint-plugin-jest": "^22.0.0",
+    "flow-bin": "^0.86.0",
+    "jest": "^23.6.0",
+    "regenerator-runtime": "^0.13.1"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage",
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/index.js"
+    ]
+  }
+}
