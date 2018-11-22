@@ -8,6 +8,7 @@
     "coverage": "NODE_ENV=test jest src/** --verbose --coverage --noStackTrace --no-cache",
     "test": "NODE_ENV=test jest src/**",
     "lint": "eslint --cache src",
+		"flow-gen-def": "flow gen-flow-files ./src/index.js > ./dist/index.js.flow",
     "flow": "flow",
     "precommit": "npm run lint && npm run flow && npm run test"
   },
