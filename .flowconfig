@@ -1,5 +1,4 @@
 [ignore]
-.*/node_modules/.*
 .*/dist/.*
 .*/__tests_.*
 
@@ -10,3 +9,9 @@ flow-typed
 module.name_mapper='^begonia/\(.*\)' -> '<PROJECT_ROOT>/src/\1'
 
 [version]
+
+[strict]
+nonstrict-import
+unsafe-getters-setters
+untyped-import
+untyped-type-import

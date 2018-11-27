@@ -4,6 +4,24 @@
     "flowtype",
     "jest"
   ],
+  "globals": {
+    "$Keys": true,
+    "$Values": true,
+    "$ReadOnly": true,
+    "$Exact": true,
+    "$Diff": true,
+    "$Rest": true,
+    "$PropertyType": true,
+    "$ElementType": true,
+    "$NonMaybeType": true,
+    "$ObjMap": true,
+    "$TupleMap": true,
+    "$Call": true,
+    "Class": true,
+    "$Shape": true,
+    "$Supertype": true,
+    "$Subtype": true
+  },
   "env": {
     "node": true,
     "es6": true,
